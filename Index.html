@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Increment and Decrement Counter</title>
+    <style>
+      /* CSS code to style the counter */
+      #counter {
+        font-size: 3em;
+        text-align: center;
+        margin: 20px;
+      }
+      button {
+        font-size: 1.5em;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="counter">0</div>
+    <button id="increment">+</button>
+    <button id="decrement">-</button>
+    
+    <script>
+      /* JavaScript code to handle the counter */
+      const counter = document.getElementById("counter");
+      const incrementBtn = document.getElementById("increment");
+      const decrementBtn = document.getElementById("decrement");
+      let count = 0;
+      
+      incrementBtn.addEventListener("click", () => {
+        count++;
+        counter.innerText = count;
+      });
+      
+      decrementBtn.addEventListener("click", () => {
+        count--;
+        counter.innerText = count;
+      });
+    </script>
+  </body>
+</html>
